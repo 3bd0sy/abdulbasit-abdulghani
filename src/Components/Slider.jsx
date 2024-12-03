@@ -131,8 +131,7 @@ const CardSlider = () => {
             />
             <div className="text-center h-[150px] sm:h-[190px] flex px-2 pb-5 flex-col justify-around">
               <h2
-                style={{ fontFamily: " 'Inknut Antiqua', serif" }}
-                className="text-white capitalize text-base sm:text-2xl font-bold"
+                className="font-inter text-white capitalize text-base sm:text-2xl font-bold"
               >
                 {card.name}
               </h2>
@@ -140,8 +139,7 @@ const CardSlider = () => {
                 {card.description}
               </p>
               <div
-                style={{ fontFamily: " 'Inknut Antiqua', serif" }}
-                className="text-xl sm:text-[30px] text-[#44A9F8]   hover:bg-opacity-10 hover:text-white hover:border-white transition"
+                className="font-inter text-xl sm:text-[30px] text-[#44A9F8]   hover:bg-opacity-10 hover:text-white hover:border-white transition"
               >
                 <a href={card.url}>Link</a>
               </div>
