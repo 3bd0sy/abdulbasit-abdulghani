@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
-
-import logo from "../assets/hero-image.png";
+import logo from "../assets/hero-image.webp";
 const Hero = () => {
   return (
     <>
