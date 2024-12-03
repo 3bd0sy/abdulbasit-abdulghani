@@ -13,6 +13,7 @@ const Hero = () => {
           }}
           src={logo}
           className="w-[475px] "
+          loading="lazy"
           alt="A picture of Abdlubasit Abdulghani, a Front End Developer"
         />
         <motion.div
