@@ -1,6 +1,5 @@
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "react-responsive";
 
 const Footer = () => {
   const [spanRef, spanInView] = useInView({
