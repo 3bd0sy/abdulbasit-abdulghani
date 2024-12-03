@@ -17,7 +17,7 @@ const ExpComponent = (props) => {
       className="flex flex-col md:flex-row gap-5 text-center  md:text-left justify-between flex-wrap lg:flex-nowrap"
     >
       <div className="flex flex-col-reverse  md:flex-row gap-3  items-center">
-        <svg className="icon rotate-90 md:rotate-0" width={75} height={75}>
+        <svg  aria-hidden="true" className="icon rotate-90 md:rotate-0" width={75} height={75}>
           <use href="#doubleArrow"></use>
         </svg>
         <div>
@@ -66,6 +66,8 @@ const Experience = () => {
     <>
       <motion.section
         ref={sectionRef}
+        role="region"
+        aria-label="Experince Section"
         initial={{ y: 100, opacity: 0 }}
         animate={sectionInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}

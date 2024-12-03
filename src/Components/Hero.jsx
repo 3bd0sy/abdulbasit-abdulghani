@@ -3,7 +3,11 @@ import logo from "../assets/hero-image.webp";
 const Hero = () => {
   return (
     <>
-      <section className="relative flex flex-col gap-[50px] lg:gap-0 lg:flex-row-reverse  items-center  lg:justify-between text-white text-center lg:text-left max-w-[1440px] p-2 md:px-16">
+      <section
+        role="region"
+        aria-label="Hero Section"
+        className="relative flex flex-col gap-[50px] lg:gap-0 lg:flex-row-reverse  items-center  lg:justify-between text-white text-center lg:text-left max-w-[1440px] p-2 md:px-16"
+      >
         <motion.img
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
@@ -42,8 +46,13 @@ const Hero = () => {
             efficient code and continuously improving through learning and
             innovation.
           </p>
-          <button className="rounded-[30px] bg-[#38B6FC] text-black py-3 px-5 text-base leading-[16px] mt-2  md:text-xl md:px-5 md:py-4 md:leading-[20px] ml-5 sm:ml-0">
-            <a href="#CallMe">CONTACT ME</a>
+          <button
+            aria-label="Navigate to contact section"
+            className="rounded-[30px] bg-[#38B6FC] text-black py-3 px-5 text-base leading-[16px] mt-2  md:text-xl md:px-5 md:py-4 md:leading-[20px] ml-5 sm:ml-0"
+          >
+            <a aria-label="Go to the contact section" href="#CallMe">
+              CONTACT ME
+            </a>
           </button>
         </motion.div>
         <div className="animation w-[40%] h-[40%] bg-blue-400 top-[400px] right-0"></div>

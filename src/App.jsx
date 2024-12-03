@@ -13,17 +13,15 @@ function App() {
   return (
     <>
       <SvgSpritesIcons />
-      <section className="flex flex-col gap-36 overflow-x-hidden">
-        <Header />
-        <Hero />
-        <Education />
-        <Experience />
-        <Projects />
-        <Skills />
-        <Certification />
-        <CallUs />
-        <Footer />
-      </section>
+      <Header />
+      <Hero />
+      <Education />
+      <Experience />
+      <Projects />
+      <Skills />
+      <Certification />
+      <CallUs />
+      <Footer />
     </>
   );
 }

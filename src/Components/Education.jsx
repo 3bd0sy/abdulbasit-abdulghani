@@ -28,13 +28,11 @@ const Education = () => {
     threshold: 0,
   });
 
-
   const [spanRef2, spanInView2] = useInView({
     triggerOnce: true,
     threshold: 0,
   });
   const isLargeScreen = useMediaQuery({ query: "(min-width: 520px)" });
-
 
   const data = [
     {
@@ -57,6 +55,8 @@ const Education = () => {
   return (
     <>
       <motion.section
+        role="region"
+        aria-label="Education Section"
         ref={sectionRef}
         initial={{ y: 100, opacity: 0 }}
         animate={sectionInView ? { y: 0, opacity: 1 } : {}}
@@ -86,7 +86,7 @@ const Education = () => {
           <motion.span
             ref={spanRef}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            initial={isLargeScreen?{ x: -200 }:{ x: -50 }}
+            initial={isLargeScreen ? { x: -200 } : { x: -50 }}
             animate={spanInView ? { x: 0 } : {}}
             className="text-[35px] leading-[35px]  text-[#A4A4A5] md:text-[70px] md:leading-[70px] lg:text-[96px]"
           >
@@ -94,6 +94,7 @@ const Education = () => {
           </motion.span>
 
           <svg
+            aria-hidden="true"
             className="my-auto"
             width="55"
             height="30"
@@ -110,7 +111,7 @@ const Education = () => {
           <motion.span
             ref={spanRef2}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            initial={isLargeScreen?{ x: 200 }:{ x: 50 }}
+            initial={isLargeScreen ? { x: 200 } : { x: 50 }}
             animate={spanInView2 ? { x: 0 } : {}}
             className="text-[35px] leading-[35px] text-[#A4A4A5] md:text-[70px] md:leading-[70px] lg:text-[96px]"
           >

@@ -33,11 +33,11 @@ const Card = ({ value }) => {
 };
 
 const Certification = () => {
-const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
 
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: true,
-    threshold: isLargeScreen? 0.2: 0,
+    threshold: isLargeScreen ? 0.2 : 0,
   });
 
   const data = [
@@ -147,6 +147,8 @@ const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
   ];
   return (
     <motion.section
+      role="region"
+      aria-label="Certification Section"
       ref={sectionRef}
       initial={{ y: 100, opacity: 0 }}
       animate={sectionInView ? { y: 0, opacity: 1 } : {}}

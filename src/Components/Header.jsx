@@ -18,7 +18,7 @@ const Header = () => {
             ABDULBASIT
           </div>
           <nav
-            className={`order-1 w-full lg:w-auto mt-3 
+            className={`order-1 w-full lg:w-auto mt-3
           ${showList ? "block" : "hidden"} lg:block`}
           >
             <ul className="lg:flex lg:gap-[15px]">
@@ -36,9 +36,11 @@ const Header = () => {
           </nav>
           <button
             className={`lg:hidden text-white `}
+            aria-label="Toggle navigation menu"
             onClick={() => setShowList((prev) => !prev)}
           >
             <svg
+              aria-hidden="true"
               width="50"
               height="50"
               viewBox="0 0 50 50"

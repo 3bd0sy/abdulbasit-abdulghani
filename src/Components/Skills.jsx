@@ -16,7 +16,10 @@ const Card = (props) => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="card_hover w-[100px] h-[125px] sm:w-[200px] sm:h-[225px] flex flex-col gap-2 sm:gap-8 px-2 py-3 justify-center items-center bg-white bg-opacity-30 rounded-[25px]"
     >
-      <svg className="icon w-[64px] sm:w-[100px] h-[64px] sm:h-[100px]">
+      <svg
+        aria-hidden="true"
+        className="icon w-[64px] sm:w-[100px] h-[64px] sm:h-[100px]"
+      >
         <use href={`#${props.name}`}></use>
       </svg>
       <h3 className="text-base capitalize font-black text-white sm:text-[28px]">
@@ -45,6 +48,8 @@ const Skills = () => {
   ];
   return (
     <motion.section
+      role="region"
+      aria-label="Skills Section"
       ref={sectionRef}
       initial={{ y: 100, opacity: 0 }}
       animate={sectionInView ? { y: 0, opacity: 1 } : {}}

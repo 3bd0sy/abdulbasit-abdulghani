@@ -16,7 +16,7 @@ const Card = (props) => {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="w-[100px] hover:scale-[1.1] h-[125px] sm:w-[200px] sm:h-[225px] gap-1 md:gap-4 flex flex-col  px-2 py-3 justify-center items-center bg-white bg-opacity-30 rounded-[25px]"
     >
-      <svg className="icon w-[64px] sm:w-[100px] h-[64px] sm:h-[100px]">
+      <svg  aria-hidden="true" className="icon w-[64px] sm:w-[100px] h-[64px] sm:h-[100px]">
         <use href={`#${props.name}`}></use>
       </svg>
       <h3 className="text-base capitalize  font-black text-white sm:text-[28px]">
@@ -72,6 +72,8 @@ const CallUs = () => {
   ];
   return (
     <motion.section
+      role="region"
+      aria-label="Call us Section"
       ref={sectionRef}
       initial={{ y: 100, opacity: 0 }}
       animate={sectionInView ? { y: 0, opacity: 1 } : {}}

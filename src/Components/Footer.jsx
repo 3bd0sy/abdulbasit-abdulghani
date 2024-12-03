@@ -12,11 +12,11 @@ const Footer = () => {
   });
 
   return (
-    <footer className=" py-16">
+    <footer role="region" aria-label="Footer Section" className=" py-16">
       <div className="text-[30px] max-w-[350px] px-7 sm:px0 sm:max-w-max mx-auto text-outline lg:text-[70px] md:text-[50px] xl:text-[80px] flex flex-col sm:flex-row justify-center items-center">
         <motion.span
           ref={spanRef}
-          initial={{ x: -200, opacity:  0}}
+          initial={{ x: -200, opacity: 0 }}
           animate={spanInView ? { x: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
           style={{ alignSelf: "start" }}
