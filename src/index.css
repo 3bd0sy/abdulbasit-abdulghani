@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,11 +17,6 @@ body {
   font-family: Arial;
   font-weight: 700;
   letter-spacing: 3px;
-  /* text-shadow: 
-   -2px -2px 0 white, 
-    2px -2px 0 rgb(133, 247, 3),
-   -2px  2px 0 rgb(255, 5, 205),
-    2px  2px 0 rgb(30, 17, 221); */
   animation: shadow-animation 6s infinite;
 }
 
