@@ -14,7 +14,7 @@ const Hero = () => {
           }}
           src={logo}
           className="w-[475px] "
-          alt=""
+          alt="A picture of Abdlubasit Abdulghani, a Front End Developer"
         />
         <motion.div
           initial={{ x: -100 }}
