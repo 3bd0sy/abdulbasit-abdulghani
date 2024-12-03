@@ -128,6 +128,8 @@ const CardSlider = () => {
               src={card.image}
               alt={card.description}
               loading="lazy"
+              width={300}
+              height={200}
               className="w-full object-cover h-[150px] sm:h-[200px] mb-5"
             />
             <div className="text-center h-[150px] sm:h-[190px] flex px-2 pb-5 flex-col justify-around">
