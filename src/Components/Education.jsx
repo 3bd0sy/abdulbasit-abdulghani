@@ -20,7 +20,7 @@ const EduComponent = (props) => {
 const Education = () => {
   const [sectionRef, sectionInView] = useInView({
     triggerOnce: true,
-    threshold: 0.4,
+    threshold: 0.2,
   });
 
   const [spanRef, spanInView] = useInView({

@@ -12,11 +12,10 @@ const Header = () => {
   ];
   return (
     <>
-      <div className="mx-auto- w-full-">
-        <header className="flex justify-between flex-wrap items-center max-w-[1440px] mx-2 my-3 w-full md:my-5 md:pl-16">
-          <div className="bg-primary text-[#194A6B] font-inter font-semibold tracking-[4px] border-2 px-3 text-base leading-[16px] py-1 border-[#2B5F83] rounded-md rounded-br-[25px] sm:rounded-br-[48px] sm:pr-5 sm:text-[32px] sm:leading-[40px]">
+        <header className="flex justify-between flex-wrap items-center max-w-[1440px] mx-auto my-3 w-full md:my-5 px-3">
+          <h2 className="bg-primary text-[#194A6B] font-inter font-semibold tracking-[4px] border-2 px-3 text-base leading-[16px] py-1 border-[#2B5F83] rounded-md rounded-br-[25px] sm:rounded-br-[48px] sm:pr-5 sm:text-[32px] sm:leading-[40px]">
             ABDULBASIT
-          </div>
+          </h2>
           <nav
             className={`order-1 w-full lg:w-auto mt-3
           ${showList ? "block" : "hidden"} lg:block`}
@@ -66,7 +65,6 @@ const Header = () => {
             </svg>
           </button>
         </header>
-      </div>
     </>
   );
 };

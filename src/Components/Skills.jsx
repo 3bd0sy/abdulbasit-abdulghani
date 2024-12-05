@@ -57,13 +57,10 @@ const Skills = () => {
       className="relative"
     >
       <SectionTitle title="SKILLS" iconName="skills" />
-      <div className="mx-8 mt-20 md:mt-24 sm:mx-20 md:mx-28">
-        <div className="flex flex-wrap gap-7 justify-center lg:max-w-[1000px] mx-auto ">
-          {/* card */}
-          {data.map((item, index) => (
-            <Card key={index} name={item} />
-          ))}
-        </div>
+      <div className=" mt-20 md:mt-24 px-5 flex flex-wrap gap-7 justify-center lg:max-w-[1000px] mx-auto ">
+        {data.map((item, index) => (
+          <Card key={index} name={item} />
+        ))}
       </div>
       <div className="animation  w-[40%] h-[40%] bg-blue-600 top-[500px]"></div>
     </motion.section>

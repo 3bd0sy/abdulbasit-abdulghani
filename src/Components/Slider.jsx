@@ -132,7 +132,7 @@ const CardSlider = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center  bg-[#2B2B2B]  h-[390px]  sm:h-[450px] justify-center ">
+    <div className="mt-[90px] flex flex-col items-center  bg-[#2B2B2B]  h-[390px]  sm:h-[450px] justify-center ">
       <div className=" relative w-full max-w-[1440px] overflow-x-auto snap-x snap-mandatory flex gap-10  hide-scrollbar">
         {projectsData.map((card) => (
           <div
@@ -154,9 +154,14 @@ const CardSlider = () => {
               <p className="text-[#B4B6C1] leading-[24px]  text-xs sm:text-base font-medium">
                 {card.description}
               </p>
-              <div className="font-inter text-xl sm:text-[30px] text-[#44A9F8]   hover:bg-opacity-10 hover:text-white hover:border-white transition">
-                <a href={card.url}>Link</a>
-              </div>
+
+              <a
+                className="font-inter text-xl sm:text-[30px] text-[#44A9F8]   hover:bg-opacity-10 hover:text-blue-300 transition"
+                target="_blank"
+                href={card.url}
+              >
+                Link
+              </a>
             </div>
           </div>
         ))}

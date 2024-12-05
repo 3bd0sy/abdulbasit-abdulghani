@@ -6,7 +6,7 @@ const Hero = () => {
       <section
         role="region"
         aria-label="Hero Section"
-        className="relative flex flex-col gap-[50px] lg:gap-0 lg:flex-row-reverse  items-center  lg:justify-between text-white text-center lg:text-left max-w-[1440px] p-2 md:px-16"
+        className="relative mx-auto w-full flex flex-col gap-[50px] lg:gap-0 lg:flex-row-reverse  items-center  lg:justify-between text-white text-center lg:text-left max-w-[1440px] p-2 md:px-16"
       >
         <motion.img
           initial={{ scale: 0 }}
